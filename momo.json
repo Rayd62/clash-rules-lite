@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "10.1.1.254"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "🐸 手动选择"}
+      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "🐸 手动选择"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
