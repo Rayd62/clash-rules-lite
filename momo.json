@@ -1,8 +1,8 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "10.1.1.254", "strategy": "prefer_ipv6"},
-      {"tag": "foreign", "type": "tcp", "server": "1.1.1.1", "detour": "🐸 手动选择", "strategy": "ipv4_only"}
+      {"tag": "local", "type": "udp", "server": "10.1.1.254"},
+      {"tag": "foreign", "type": "tcp", "server": "1.1.1.1", "detour": "🐸 手动选择", }
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
@@ -11,6 +11,7 @@
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple", "my-direct"], "server": "local"}
     ],
+    "strategy": "prefer_ipv6"
     "final": "foreign",
     "independent_cache": true,
     "reverse_mapping": true
