@@ -11,7 +11,7 @@
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple", "my-direct"], "server": "local"}
     ],
-    "strategy": "prefer_ipv6"
+    "strategy": "prefer_ipv6",
     "final": "foreign",
     "independent_cache": true,
     "reverse_mapping": true
