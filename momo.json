@@ -2,7 +2,7 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "udp", "server": "10.1.1.254"},
-      {"tag": "foreign", "type": "tcp", "server": "1.1.1.1", "detour": "🐸 手动选择", }
+      {"tag": "foreign", "type": "tcp", "server": "1.1.1.1", "detour": "🐸 手动选择"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
