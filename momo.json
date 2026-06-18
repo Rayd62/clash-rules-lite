@@ -1,19 +1,17 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "10.1.1.254"},
-      {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "https", "server": "1.1.1.1", "detour": "🐸 手动选择"}
+      {"tag": "local", "type": "udp", "server": "10.1.1.254", "strategy": "prefer_ipv6"},
+      {"tag": "foreign", "type": "tcp", "server": "1.1.1.1", "detour": "🚀 默认代理", "strategy": "ipv4_only"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"query_type": "HTTPS", "action": "reject"},
       {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"], "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"}
+      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple", "my-direct"], "server": "local"}
     ],
     "final": "foreign",
-    "strategy": "ipv4_only",
     "independent_cache": true,
     "reverse_mapping": true
   },
