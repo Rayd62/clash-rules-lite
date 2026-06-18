@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        ".ipleak.net",
+        ".hardwarenation.com",
+        ".juniper.net",
+        ".uukanshu.cc",
+        ".shuxiangjia.cn",
+        ".networkhardwares.com",
+        ".compubase.biz",
+        ".googletagmanager.com",
+        ".linkedin.com",
+        ".nodeseek.com",
+        ".vpsjyz.com",
+        ".mzstatic.com"
+      ]
+    }
+  ]
+}
